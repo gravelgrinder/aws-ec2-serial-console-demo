@@ -17,7 +17,7 @@ aws ec2 run-instances \
 ```
 
 2. Enable EC2 Serial Console at the Account + Region level.
-````
+```
 aws ec2 enable-serial-console-access --region us-east-1
 ```
 
