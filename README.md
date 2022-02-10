@@ -61,3 +61,11 @@ aws ec2 disable-serial-console-access --region us-east-1
 * Link on how to "Use SAC" can be found here --> https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/troubleshooting-sac.html
 * For Linux OS you will need to change the `PasswordAuthentication` in your sshd_config
 
+## Better options for fixing boot issues with Windows EC2 instances
+* Use a second "Helper" EC2 instance to mount the boot volume to troubleshoot and resolve volume.
+* Use the EC2Rescue for EC2 Windows tool. Use the tool to troubleshoot OS-level issues and to collect advanced logs and configuration files for further analysis. The following are some common issues that EC2Rescue can address:
+    * Instance connectivity issues due to firewall, Remote Desktop Protocol (RDP), or network interface configuration.
+    * OS boot issues due to a blue screen or stop error, a boot loop, or a corrupted registry.
+    * Any issues that might need advanced log analysis and troubleshooting.
+    [How can I use EC2Rescue to troubleshoot issues with my Amazon EC2 Windows instance?](https://aws.amazon.com/premiumsupport/knowledge-center/ec2rescue-windows-troubleshoot/a)
+
